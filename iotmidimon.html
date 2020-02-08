@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<HTML>
+<HEAD>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
+	<title>IotMIDI Monitor</title>
+	<script type="text/javascript" src="https://mikatahara.github.io/mywebmidiapi.js"></script>
+	<script type="text/javascript" src="IoTmidi.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.2.js"></script>
+
+<style>
+.sans { 
+	color: #eeeeee; 
+	font-family:sans-serif ;  
+	font-size: 12pt; 
+	line-height : 1.5em;
+}
+.mono { 
+	color: black; 
+	font-family:monospace ; 
+	font-size: 12pt; 
+	line-height : 1.5em;
+}
+
+#cbody{
+       background-color: #222222;
+       color : "#000000;
+       margin-right:28px;
+       margin-left:28px;
+       margin-top:20px;
+       auto;
+       -webkit-text-size-adjust: 100%;
+ }
+ a:link { color: #4040ff; }
+ a:visited { color: #ff0000; }
+ a:hover { color: #0000ff; }
+ a:active { color: #ff8000; }
+
+#temporature{
+	position:relative;
+	top	:	200px;
+	left:	0px;
+}
+</style>
+
+<!--	-------------------------------------------------------------------- -->
+</HEAD>
+
+<body id="cbody">
+
+<div id="temporature">
+</div>
+
+<script>
+<!-- 
+var textv = document.getElementById("temporature");
+
+window.onload = function() {
+	runTest2();
+	var hoge = setInterval(function() {
+		if(inputs!=null && outputs!=null){
+			clearInterval(hoge);
+            console.log("MIDION");
+            for(var i=0; i<inputs.length; i++){
+                inputs[i].onmidimessage = handleMIDIMessage3;
+            }
+		}
+	}, 400);
+};
+
+function handleMIDIMessage3( event ) {
+	var i,j;
+	var html;
+
+	makeMassage( event );
+	console.log(str);
+	html="<center><font size=\"20\" color=\"#eeeeee\">"
+	html+=str;
+	html+="℃";
+	html+="</center></font>";
+	textv.innerHTML  = html;
+//	textv.innerHTML  += "℃";
+
+//	log.scrollTop = log.scrollHeight;
+}
+
+-->
+</script>
+<br>
+
+<div id="log">
+</div>
+
+</body>
+</html>
